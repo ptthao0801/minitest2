@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // khai báo lớp
+    function Person(name, age, height, weight) {
+        this.name = name
+        this.age = age
+        this.height = height
+        this.weight = weight
+
+        this.walk = function() {
+            console.log(this.name + " đi lại được")
+        }
+
+        this.say = function (string) {
+            console.log(this.name + " nói: "+ string)
+        }
+    }
+    // khai báo đối tượng
+    let person1 = new Person("Quân, 29, 1.65, 70")
+</script>
